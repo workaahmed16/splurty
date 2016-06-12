@@ -4,6 +4,10 @@ class QuotesController < ApplicationController
     @quote = Quote.order("RANDOM()").first
   end
   
+  
+  
+  
+  
   def new
     @quote = Quote.new
   end
@@ -18,6 +22,10 @@ class QuotesController < ApplicationController
   
   def about
     
+  end
+  
+  def show_all
+    @quotes = Quote.all
   end
   
   private
